@@ -119,7 +119,7 @@ The {clean_sector} sector plays a significant role in India's economy, supported
     return _build_response(ai_result, clean_sector, request, sources)
 
 
-# 🔥 Helper (clean architecture)
+# Helper (clean architecture)
 def _build_response(data, sector, request, sources=None, cached=False):
     session_id = getattr(request.state, "session_id", None)
 

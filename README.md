@@ -6,7 +6,7 @@ The system integrates **Google Gemini (LLM)** with **real-time web data** and in
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature             | Details                            |
 | ------------------- | ---------------------------------- |
@@ -22,7 +22,7 @@ The system integrates **Google Gemini (LLM)** with **real-time web data** and in
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. User requests a sector:
 
@@ -82,7 +82,7 @@ GEMINI_MODEL=gemini-3-flash-preview
 API_KEYS=appscrip-key-2024,reviewer-key-5678
 ```
 
-👉 Get Gemini API key: https://aistudio.google.com/app/apikey
+ Get Gemini API key: https://aistudio.google.com/app/apikey
 
 ---
 
@@ -108,7 +108,7 @@ http://localhost:8000/docs
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 Use API key:
 
@@ -126,7 +126,7 @@ X-API-Key: appscrip-key-2024
 
 ---
 
-## 📊 Main Endpoint
+##  Main Endpoint
 
 ### `GET /analyze/{sector}`
 
@@ -161,7 +161,7 @@ curl "http://localhost:8000/analyze/technology?api_key=appscrip-key-2024"
 
 ---
 
-## 🔁 Fallback System
+##  Fallback System
 
 If Gemini fails (quota / API error):
 
@@ -171,7 +171,7 @@ If Gemini fails (quota / API error):
 
 ---
 
-## ⚡ Caching
+##  Caching
 
 * Results cached for **30 minutes**
 * Prevents repeated AI calls
@@ -179,14 +179,14 @@ If Gemini fails (quota / API error):
 
 ---
 
-## 🚦 Rate Limiting
+##  Rate Limiting
 
 * Default: **5 requests per minute per API key**
 * Prevents abuse
 
 ---
 
-## 🧪 Testing (Swagger)
+##  Testing (Swagger)
 
 1. Open `/docs`
 2. Click **Authorize**
@@ -203,7 +203,7 @@ If Gemini fails (quota / API error):
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 app/
@@ -223,7 +223,7 @@ app/
 
 ---
 
-## 🛡️ Design Highlights
+##  Design Highlights
 
 * Async FastAPI architecture
 * Clean separation of concerns
@@ -233,7 +233,7 @@ app/
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 * Gemini free tier has **quota limits**
 * Fallback ensures system still works
@@ -241,7 +241,7 @@ app/
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 
 This API demonstrates:
 
@@ -249,9 +249,3 @@ This API demonstrates:
 * Backend system design
 * Performance optimization
 * Fault-tolerant architecture
-
----
-
-## 📄 License
-
-MIT
