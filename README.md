@@ -43,7 +43,7 @@ The system integrates **Google Gemini (LLM)** with **real-time web data** and in
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### 1. Clone the project
 
